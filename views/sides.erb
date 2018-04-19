@@ -8,7 +8,7 @@
     <h2>Select an item</h2>
     <form action="/add_to_order" method="post">
       <!-- Loop through hash to show items and their price. -->
-
+    <div class = "display">
       <ul>
         <% menu[selection].each do |key, value| %>
           <li>
@@ -24,6 +24,7 @@
           </li>
         <% end %>
       </ul>
+    </div>
       <p>Quantity: <input type="number" min="1" max="50" value="1" name="quantity" required></p>
       <input type="submit" value="Add this item">
     </form>

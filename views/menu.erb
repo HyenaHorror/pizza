@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="/css/master.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+
   <body>
     <div class="foodmenu">
-
-    <ul>
       <% menu.each do |key, value| %>
         <!-- |key, value| prevents displaying whole menu hash -->
         <% if key != "size" && key != "custom" %>
-          <li><a href="/sides?category=<%=key%>"><button type="button"><%=key.capitalize%></button></a></li>
+          <a href="/sides?category=<%=key%>"><button type="button"><%=key.capitalize%></button></a><br><br><br>
         <% end %>
       <% end %>
-    </ul>
   </div>
     <% if order.length != 0 %>
       Current order:<br>
@@ -43,4 +34,3 @@
       <a href="/checkout"> <button type="button">Checkout</button></a>
     <%end%>
   </body>
-</html>

@@ -1,32 +1,86 @@
+button {
+  border-color: black;
+  border-radius: 2px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  background-color: grey;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+  border-color: black;
+  border-style: inset;
+  border-width: 5px;
+  width: 330px;
+}
+
+/* div.block {
+
+  /* size: 50%; */
+  /* width: 40%; */
+  /* height: 600px; */
+  /* float: left; */
+  /* background-color: grey; */
+  /* border-radius: 10px; */
+  /* padding: 5%; */
+  /* margin: 2%; */
+  /* border-color: black; */
+  /* border-style: inset; */
+  /* border-width: 5px; */
+/* } */
+
+body {
+  background-image: url("/img/pizza.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
 td {
   vertical-align: top;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-.navbar {
+} */
+/* .navbar {
   float: right;
 
-}
-.navbar li{
+} */
+.navbar li {
   text-transform: capitalize;
   display: inline;
+  border-color: black;
+  background-color: powderblue;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 2px;
 }
-.yield{
+/* .yield{
   background-color: powderblue;
   width: 70%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
-.foodmenu{
-  margin: auto;
-  width: inherit;
-}
-.foodmenu li{
-  text-transform: capitalize;
-  display: inline;
 
+
+.foodmenu {
+  /* background-color: powderblue; */
+  width: 5%;
+  padding: 10px;
+  border-color: black;
 }
+/* .foodmenu button{
+
+  padding: 5px;
+  float: left;
+  text-transform: capitalize;
+  background-color: white;
+  font-size: 1vw;
+  border-color: black;
+} */
